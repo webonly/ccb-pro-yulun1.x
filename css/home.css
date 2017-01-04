@@ -1,0 +1,174 @@
+/* homepage */
+
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, p, input, select, textarea, form {
+	margin: 0;
+	padding: 0
+}
+body {
+	font: 18px/1.5 微软雅黑;
+	color:#0b5793;
+	background: url(../image/bg.png) no-repeat;
+	width: 1080px;
+	height: 1920px;
+}
+img {
+	border: none
+}
+ul, ol {
+	list-style: none
+}
+input, select, textarea {
+	outline: none;
+	border: none;
+	background: none
+}
+textarea {
+	resize: none
+}
+a {
+	text-decoration: none
+}
+.clearfix:after {
+	content:'';
+	*display: block;
+	*clear: both
+}
+.clearfix {
+	zoom: 1
+}
+::selection {
+	background-color: #669900;
+	color: #ffffff;
+	text-shadow: none
+}
+::-moz-selection {
+	background-color: #669900;
+	color: #ffffff;
+	text-shadow: none
+}
+@font-face {
+	font-family: youyuan;
+	src: url("../fonts/youyuan.ttf") format("TrueType");
+}
+@font-face {
+	font-family: Redocn;
+	src: url("../fonts/Redocn.otf") format("TrueType")
+}
+
+/*  home  */
+.btn {width: 130px;height: 44px;line-height: 44px;text-align: center; background-color: #bdbbf1;margin-top: 20px;}
+
+
+.contlist {position: relative;width: 1080px;height: 590px;display: none;}
+
+.homecont-pre {position: absolute;left: 50px;top: 315px; width: 156px;height: 85px;background: url('../image/step-0.png');overflow: hidden;}
+.homecont-next {position: absolute;left: 880px;top:315px;width: 156px;height: 85px;background: url('../image/step-1.png');overflow: hidden;}
+.dirbtn { display: none; }
+
+.home-header {width: 1080px;height: 90px;overflow: hidden;}
+.home-voice {position: absolute; width: 87px;height: 81px;background: url('../image/voice-icon.png');left: 26px;top:13px;}
+.voice-cont {position: absolute;max-width: 850px; height: 47px;line-height: 47px; left: 110px;
+	top:30px;overflow: hidden;background: url('../image/voice-cont.png') no-repeat;
+	border-radius: 5px;font-size: 25px; text-indent: 29px;color: #fff;}
+.home-button {position: absolute; width: 97px;height: 92px;background: url('../image/home-icon.png');top: 13px;left:960px;}
+.home-anser {position: absolute;top: 92px;left: 180px;height: 60px;width: 700px;font-size: 18px;}
+.home-logo {position: absolute;left: 790px;top: 645px;width: 281px;height: 51px;background: url('../image/jianhanglogo.png');}
+.pingbao {position: absolute;left: 0px;top: 0px; width: 1080px;height: 706px;background: url("../image/bg2.png") no-repeat;z-index: 9999;}
+.pingbao-cont {position: relative;width:1080px;height: 560px;top: 90px;}
+.answer-cont {position: absolute;width: 800px;height: 300px;left: 140px;font-size: 30px;top: 200px;color: #6b6b6b;}
+.btn-blue {width: 281px;height: 83px;background: url('../image/button-1.png');line-height: 83px;color: #fff;text-align: center;font-size: 22px;}
+.btn-red {width: 281px;height: 80px;background: url('../image/button-2.png');line-height: 80px;color: #fff;text-align: center;font-size: 22px;}
+.btn-android {width: 260px;height: 278px;display: inline-block;background: url('../image/btn-android.png')}
+.btn-ios {width: 260px;height: 278px;display: inline-block;background: url('../image/btn-ios.png')}
+
+.cont {position:absolute; left: 10px;top: 110px; width: 1060px;height: 590px;overflow: hidden;display: none;clear: both;}
+.answerpic-cont {width: 75%;margin-left: auto;margin-right: auto;font-size: 30px;color: #6b6b6b;}
+.answer-pic {width: 1060px;height: 400px;}
+.answer-picsize {display: block;margin-left: auto;margin-right: auto;height: 320px;width: auto;}
+#id1482216077507-1 {width: 281px;height: 90px;background: url('../image/button-2.png')}
+.answer-btn-pic {position: absolute;width: 100%;height: 90px;z-index: 999;bottom: 40px;} 
+.answer-btn-pic button{}
+#answerOnlyBtn  {width: 1080px;}
+#answerOnlyBtn1 {width: 258px;height: 258px;background: url('../image/lzf-1.png') no-repeat;}
+#answerOnlyBtn2 {width: 562px;height: 258px;background: url('../image/lzf-1.png') no-repeat;}
+#answerOnlyBtn3 {width: 900px;height: 258px;background: url('../image/lzf-1.png') no-repeat;}
+
+#answerOnlyBtn >.audiobutton {display: block;float: left;width: 223px;height: 181px;background: url('../image/lcbtn.png');margin-left: auto;margin-right: auto;
+color: #fff;font-size: 18px;border: none;margin-left: 37px;
+text-align: center;font-family: 微软雅黑;}
+#answerOnlyBtn1 >.audiobutton {display: block;float: left;width: 230px;height:230px;margin-right: 65px;
+border: none;color: #fff;font-size: 25px;font-weight: normal;background: none;padding: 5px;
+text-align: center;font-family: 微软雅黑;}
+#answerOnlyBtn2 >.audiobutton {display: block;float: left;width: 230px;height:230px;margin-right: 65px;
+border: none;color: #fff;font-size: 25px;font-weight: normal;background: none;padding: 5px;
+text-align: center;font-family: 微软雅黑;}
+#answerOnlyBtn3 >.audiobutton {display: block;float: left;width: 230px;height:230px;margin-right: 65px;
+border: none;color: #fff;font-size: 25px;font-weight: normal;background: none;padding: 5px;
+text-align: center;font-family: 微软雅黑;}
+
+
+
+#answerPicBtn >.audiobutton {display: inline-block; width: 281px;height: 80px;background: url('../image/button-1.png');margin-left: auto;margin-right: auto;
+border: none;color: #fff;font-size: 25px;line-height: 70px;font-weight: normal;
+text-align: center;font-family: 微软雅黑;}
+.pingbao-icon {float: left; width: 87px;height: 81px;background: url('../image/voice-icon2.png')}
+.answerOnlyBtn-box {width: 900px;height: 258px;padding-left: 100px;margin-top: 50px;}
+
+
+.home-video {display: block;position: fixed;bottom: 0;left: 0;width: 1080px;height: auto;z-index: 9999;}
+
+
+
+
+
+
+.home-mid {
+	position: absolute;
+	left: 30px;
+	top: 800px;
+	height: 109px;
+	width: 1000px;
+	z-index: 99999;
+}
+.pover-canv {position: absolute;left: 48px;top:0px;z-index: 888}
+.hometime {
+	width: 210px;
+	height: 104px;
+	margin-left: 600px;
+	float: left;
+	color: #333;
+	font-family: "Redocn","youyuan";
+	font-weight: 800
+}
+.robotTime {
+	font-size: 80px;
+	height: 80px;
+	line-height: 80px
+}
+.robotTime-t {
+	font-size: 18px;
+	height: 25px;
+	margin-left: 3px
+}
+.robotDate1 {
+	display: block;
+	float: left;
+	width: 72px;
+	font-size: 18px;
+	line-height: 30px
+}
+.robotWeek {
+	display: block;
+	float: left;
+	margin-left: 0px;
+	width: 18px;
+	width: 70px;
+	margin-left: 6px
+}
+.power {
+	float: left;
+	width: 142px;
+	height: 94px;
+	margin-left: 40px;
+	background: url(../image/power.png) no-repeat
+}

@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+		<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<!--   ***********************  屏保  **************************************    -->
+<div class="pingbao" >
+    <div class="pingbao-cont">
+    <div style="width: 100%;height:75px;">
+    	    <p class="daiji-robot" style="font-size: 26px;color: #005ea4;text-align: center;">我是建行智能机器人小龙人<br>
+	您可以这样问我：怎么购买黄金钞？</p></div>
+			<!-- Swiper -->
+            <div class="swiper-container-pingbao tips" style="width: 750px;height: 460px;margin: 0 auto;overflow: hidden;" >
+                <div class="swiper-wrapper daiji-box">
+                    <div id="daiji-0" class="swiper-slide" style="background: url(slides/pingbao-1.png);background-size: cover;"></div>
+                    <div id="daiji-1" class="swiper-slide" style="background: url(slides/pingbao-2.png);background-size: cover;"></div>
+                    <div id="daiji-2" class="swiper-slide" style="background: url(slides/pingbao-3.png);background-size: cover;"></div>
+                    <div id="daiji-3" class="swiper-slide" style="text-align: left;">
+            			<p class="tips-robot" style="margin-top: 50px;text-align: left;">您可以这样问：</p>
+						<p class="tips-item" style="text-indent: 50px;">存款利率是多少？  你叫什么名字？</p>
+						<p class="tips-item" style="text-indent: 50px;">怎么办理粤通卡？  你会唱歌吗？</p>
+						<p class="tips-item" style="text-indent: 50px;">那有些理财产品？   怎样开通云闪付？</p>
+						<p class="tips-item" style="text-indent: 50px;">你会做什么？       我想取钱</p>
+                    </div>
+                </div> 
+            </div>
+		    <script src="js/swiper.min.js"></script>
+		    <!-- Initialize Swiper -->
+		    <script>
+		        var swiper_1 = new Swiper('.swiper-container-pingbao', {
+		            pagination: '.swiper-pagination',
+		            nextButton: '.swiper-button-next',
+		            prevButton: '.swiper-button-prev',
+		            paginationClickable: true,
+		            spaceBetween: 30,
+		            centeredSlides: true,
+		            autoplay: 5000,
+		            autoplayDisableOnInteraction: false,
+		            onSlideChangeStart:function(swiper_1){
+		            	console.log(swiper_1.activeIndex);
+		            	if (swiper_1.activeIndex==3) {
+		            		$(".daiji-robot").html('您好，我是建行智能机器人小龙人');
+		            	}
+		            	else if(swiper_1.activeIndex==0||swiper_1.activeIndex==1||swiper_1.activeIndex==2){
+		            		$(".daiji-robot").html('您好，我是建行智能机器人小龙人'+"<br>"+'您可以这样问我：怎么购买黄金钞？');
+		            	}
+		            }
+		        });
+		    </script>
+    </div>
+</div>
+
+<!--   ***********************  header  **************************************    -->
+<div class="home-header">
+	<div class="home-voice"></div>
+	<div class="voice-cont"></div>
+	<div class="home-button"></div>
+</div>
+<div class="answer-cont"></div>
+<div class="homecont-pre dirbtn"></div>
+<div class="homecont-next dirbtn"></div>
+
+
+<!--   ***********************  只带图片  **************************************    -->
+<div class="homecont1 cont">
+	<div class="homecont1-step0 contlist">
+         <div class="answerpic-cont"></div>
+         <div id="answerOnlyPic" class="answer-pic">
+         </div>
+    </div>
+</div>
+<!--   ***********************  只带按钮 0 **************************************    -->
+<div class="homecont2 cont">
+	<div class="homecont2-step0 contlist">
+         <div class="answerpic-cont"></div>
+         <div id="answerOnlyBtn" class="answer-pic"></div>
+    </div>
+</div>
+<!--   ***********************  只带按钮 1 **************************************    -->
+<div class="homecont21 cont">
+	<div class="homecont21-step0 contlist">
+         <div class="answerpic-cont"></div>
+        <div class="answerOnlyBtn-box"> <div id="answerOnlyBtn1" class="answer-pic"></div></div>
+    </div>
+</div>
+<!--   ***********************  只带按钮  2**************************************    -->
+<div class="homecont22 cont">
+	<div class="homecont22-step0 contlist">
+         <div class="answerpic-cont"></div>
+        <div class="answerOnlyBtn-box"> <div id="answerOnlyBtn2" class="answer-pic"></div></div>
+    </div>
+</div>
+<!--   ***********************  只带按钮  3**************************************    -->
+<div class="homecont23 cont">
+	<div class="homecont23-step0 contlist">
+         <div class="answerpic-cont"></div>
+        <div class="answerOnlyBtn-box"> <div id="answerOnlyBtn3" class="answer-pic"></div></div>
+    </div>
+</div>
+<!--   ***********************  图片+按钮  **************************************   -->
+<div class="homecont3 cont">
+	<div class="homecont3-step0 contlist"  style="text-align: center;">
+         <div class="answerpic-cont"></div>
+         <div id="answerBtnPic" class="answer-pic">
+         </div>
+         <div id="answerPicBtn" class="answer-btn-pic" style="margin:0 auto;">
+         </div>
+    </div>
+</div>
+<!--   ***********************  图片+按钮  **************************************   -->
+<div class="homecont4 cont">
+	<div class="homecont4-step0 contlist"  style="text-align: center;">
+         <div class="answerpic-cont"></div>
+    </div>
+</div>
+
+        <!-- 电量 时间 天气 -->
+        <div class="home-mid">
+            <div class="power" style="color:#0e5be1;font-family: Redocn;font-size: 30px;text-align: center;padding-top: 25px;"></div>
+            <canvas id="pover-canv" width="142px" height="94px" class="pover-canv"></canvas>
+            <div class="hometime">
+                <div id="hometime-time" class="robotTime" style="font-size: 80px;height: 80px;line-height: 80px;"></div>
+                <div style="font-size: 18px;height: 25px;margin-left: 3px;">
+                    <span id="hometime-date" class="robotDate1" style="display: block;float: left; width: 72px;font-size: 18px;line-height: 30px;"></span>
+                    <span id="hometime-week" class="robotWeek" style="display: block;float: left; margin-left: 0px;width: 18px;width: 70px;margin-left:6px;"></span></div>
+            </div>
+        </div>
+
+<video id="home-video" class="home-video" src="video/ccb-3.mp4" autoplay loop></video>
+
+<script src="js/common/jquery.min.js"></script>
+<script type="text/javascript" src="js/common/easeljs.min.js"></script>
+<script type="text/javascript" src="js/common/eventemitter2.min.js"></script>
+<script type="text/javascript" src="js/common/roslib.min.js"></script>
+<script type="text/javascript" src="js/common/ros2d.min.js"></script>
+<script type="text/javascript" src="js/common/nav2d.min.js"></script>
+
+
+
+<script src="js/voice-yulun.js"></script>
+
+
+<script src="js/navigation.js"></script> 
+<script src="js/baseEvent.js"></script> 
+<script src="js/kinect.js"></script>
+<script src="js/power.js"></script>
+
+
+
+<script src="js/app.js"></script>
+</body>	
+</html>
